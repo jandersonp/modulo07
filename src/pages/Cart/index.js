@@ -1,4 +1,9 @@
 import React from 'react';
+import {
+  MdRemoveCircleOutline,
+  MdAddCircleOutline,
+  MdDelete,
+} from 'react-icons/md';
 
 import { Container, ProdutTable, Total } from './styles';
 
@@ -14,14 +19,40 @@ export default function Cart() {
             <th>SUBTOTAL</th>
             <th />
           </tr>
-          <tbody>
-            <tr>
-              <td>
-                <img src="" alt="" srcSet="" />
-              </td>
-            </tr>
-          </tbody>
         </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img
+                src="https://static.netshoes.com.br/produtos/tenis-adidas-harden-stepback-masculino/82/NQQ-0224-782/NQQ-0224-782_detalhe1.jpg?ts=1579783590?resize=280:280"
+                alt="Tênis"
+              />
+            </td>
+            <td>
+              <strong>Tênis muito massa</strong>
+              <span>$129,90</span>
+            </td>
+            <td>
+              <div>
+                <button type="button">
+                  <MdRemoveCircleOutline size={20} color="#7159c1" />
+                </button>
+                <input type="number" readOnly value={2} />
+                <button type="button">
+                  <MdAddCircleOutline size={20} color="#7159c1" />
+                </button>
+              </div>
+            </td>
+            <td>
+              <strong>$258,90</strong>
+            </td>
+            <td>
+              <button type="button">
+                <MdDelete size={20} color="#7159c1" />
+              </button>
+            </td>
+          </tr>
+        </tbody>
       </ProdutTable>
 
       <footer>
