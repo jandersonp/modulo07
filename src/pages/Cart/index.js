@@ -5,12 +5,12 @@ import {
   MdDelete,
 } from 'react-icons/md';
 
-import { Container, ProdutTable, Total } from './styles';
+import { Container, ProductTable, Total } from './styles';
 
 export default function Cart() {
   return (
     <Container>
-      <ProdutTable>
+      <ProductTable>
         <thead>
           <tr>
             <th />
@@ -53,7 +53,7 @@ export default function Cart() {
             </td>
           </tr>
         </tbody>
-      </ProdutTable>
+      </ProductTable>
 
       <footer>
         <button type="button">Finalizar pedido</button>

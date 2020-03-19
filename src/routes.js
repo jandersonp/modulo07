@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Cart from './pages/Cart';
 
+/** Componente de Rotas */
 export default function Routes() {
   return (
     <Switch>
