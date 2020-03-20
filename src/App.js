@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
+/** Provider deixa o store visivel a toda aplicação */
 import { Provider } from 'react-redux';
+
+/** Configuração do Reactotron */
+import './config/ReactotronConfig';
 
 /** Rotas da nossa aplicação */
 import Routes from './routes';

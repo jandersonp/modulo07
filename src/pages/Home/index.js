@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { MdAddShoppingCart } from 'react-icons/md';
+import { MdShoppingCart } from 'react-icons/md';
+
+/** Formatação de preço */
 import { formatPrice } from '../../util/format';
 
 /** API do nosso projeto */
@@ -51,7 +53,7 @@ class Home extends Component {
               onClick={() => this.handleAddProduct(product)}
             >
               <div>
-                <MdAddShoppingCart size={16} color="#FFF" /> 3
+                <MdShoppingCart size={16} color="#FFF" /> 3
               </div>
               <span>ADICIONAR AO CARRINHO</span>
             </button>
